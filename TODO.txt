@@ -1,0 +1,54 @@
+LEGEND:
+  TYPE:
+    [PRIORITY] CONTENT    = Elements
+    [PRIORITY] TREAT      = Traitement
+    [PRIORITY] STYLE      = Visuel
+    [PRIORITY] UI         = Animatif
+  PRIORITY:
+    * [TYPE]              = À faire / Obligatoire / Catégorie
+    + [TYPE]              = À ajouter / Ajouté
+    / [TYPE]              = À choisir / Optionnel
+    - [TYPE]              = À supprimer / Supprimé
+    ~ [TYPE]              = À modifier / Modifié
+    = [TYPE]              = À garder / Inchangé
+    > [TYPE]              = Prioritaire
+    # [TYPE]              = Terminé / Validé
+
+VERSION 0 (Alpha)
+
+  TODO
+  > Créer une page "principale"
+      + CONTENT:  Barre de navigation qui envoie vers "Wiki", "Forum" et "Réseaux sociaux"    -HTML-
+      + STYLE:    Située en haut à gauche (Syntaxe en CAPITALES)                              -CSS-
+      / UI:       Initiales du site répétées qui défilent verticalement (+Potentiel logo?)    -JS-
+
+  * Créer une page "accueil"
+      + CONTENT:  Les liens "Connexion" et "Inscription"                                      -HTML, AJAX-
+      + STYLE:    Centré, syntaxe en CAPITALES, séparé d'un tirait                            -CSS-
+
+  * Créer une page "connexion"
+      + CONTENT:  Label "Connexion"(1),
+                  Champs "Adresse mail" et "Mot de passe"(2),
+                  Bouton "Se connecter"(3),                                                   -HTML, AJAX-
+      + TREAT     Lien "Mot de passe oublié?"(4)
+      + STYLE:    (1) Fieldset en CAPITALES
+                  (2) Centré ou aligné à gauche, alignement horizontal des champs
+                  (3) Aligné au champs supérieur
+                  (4) Souligné, taille réduite, aligné en bas à droite                        -CSS-
+      / UI:       Animation fieldset                                                          -JS-
+
+
+  * Créer une page "inscription"
+      + CONTENT:  Label "INSCRIPTION"(1),
+                  Champs "Adresse mail", "Confirmation", "Mot de passe", "Confirmation"(2),
+                  Bouton "S'inscrire"(3)
+      ~ CONTENT:  Entre les champs et le bouton, using conditions and cookies rights' case    -HTML-
+      + TREAT:    Lien "Déjà inscrit?"(4)
+
+
+  * Créer une page "verification d'inscription"
+
+  * Créer une BDD
+  * Connecter la BDD
+  * Créer une table "Utilisateur" avec un booléen d'identification
+  *
