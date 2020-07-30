@@ -1,29 +1,42 @@
 @charset "utf-8";
 
+/*
+** Couleur claire : #CB9156
+** Couleur foncée : #AE7439
+** Couleur foncée+ : #51361B
+*/
+
 body {
   font-family: "DIN-Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .mainBlock {
-  background-color: yellow;
-  margin: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
-  padding: 8px;
+  padding: 10px;
 }
 
 .content {
-  background-color: white;
+  padding: 4em;
+  background-color: #CB9156;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
+  border-radius: 1.5em;
 }
 
 .lots_link {
+  color: #51361B;
   text-decoration: none;
   outline: none;
+}
+
+.link_format {
+  color: #51361B;
+  font-size: 1.2em;
+  font-weight: 500;
 }

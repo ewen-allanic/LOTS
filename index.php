@@ -17,14 +17,11 @@
 		$_SESSION["player"] = [];
 	}
 
-  /* OLD LOADING PAGES
-
 	// Valorisation de la variable d'action à partir de la Query String
-	$action = "home";
+	$action = "decide";
 	if (isset($_GET['action'])) {
 		$action = ($_GET['action']);
 	}
-
 
   // Choix des éléments de la vue résultante
 	$charter = './views/v-charter.php';
@@ -32,11 +29,6 @@
 	$sideBar = './views/v-aside.php';
 	$footer = './views/v-footer.php';
 
-  $mainContent = './views/v-'.$action.'.php';
+  $decide = './views/v-'.$action.'.php';
 
-  */
-
-  // Loading of the main page
-  $mainPage = './views/v-mainPage.php';
-
-	include $mainPage;
+	include "./views/v-mainPage.php";

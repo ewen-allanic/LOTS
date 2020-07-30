@@ -17,7 +17,7 @@
 	<div class="mainBlock">
 		<?php include "./views/v-header.php"; ?>
 		<div class="content">
-			<a class="lots_link" href="#">CONNEXION</a> - <a class="lots_link" href="#">INSCRIPTION</a>
+			<?php include './views/v-'.$action.'.php'; ?>
 		</div>
 	</div>
 </body>
