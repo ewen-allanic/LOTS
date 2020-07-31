@@ -7,10 +7,14 @@
 */
 
 body {
-  font-family: "DIN-Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0;
+  font-family: "Verdana", "Geneva", sans-serif;
 }
 
+/*
+
 .mainBlock {
+  background-color: #1E90FF;
   top: 0;
   left: 0;
   right: 0;
@@ -21,12 +25,39 @@ body {
 
 .content {
   padding: 4em;
-  background-color: #CB9156;
+  background-color: #AE7439;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
-  border-radius: 1.5em;
+  border-radius: 1em;
+  border: solid 0.2em #51361B;
+}
+
+.content fieldset {
+  padding: 1.4em;
+  border: solid 0.2em #51361B;
+  border-radius: 0.2em;
+  background-color: #CB9156;
+}
+
+.formSettings {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
+}
+
+.formSettings label {
+  padding: 0.4em;
+  text-align:right;
+}
+
+.formSettings input {
+  padding: 0.4em;
+}
+
+.formSettings button {
+  padding: 0.4em;
 }
 
 .lots_link {
@@ -39,4 +70,129 @@ body {
   color: #51361B;
   font-size: 1.2em;
   font-weight: 500;
+  background-color: #AE7439;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8em;
+  position: absolute;
+  box-shadow: 0px 2px 0px #51361B;
+}
+
+*/
+
+/* Barre de navigation */
+
+.topBar {
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topBar ul {
+  padding: 0;
+}
+
+.topBar li {
+  display: inline-block;
+}
+
+.topBar a {
+  padding: 1em;
+  text-decoration: none;
+  outline: none;
+  color: lightsteelblue;
+}
+
+.topBar a:hover {
+  color: white;
+  background-color: lightslategrey;
+}
+
+/* Réglages généraux */
+
+.content {
+  top: 3.2em;
+}
+
+.content h2 {
+  margin: 0;
+}
+
+.headContent {
+  text-align: center;
+  color: saddlebrown;
+  background-color: peachpuff;
+  padding: 1em;
+}
+
+.bodyContent {
+  width: 300px;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  border: solid 2px lightsteelblue;
+}
+
+.bodyContent .formElement, .linkRight {
+  padding: 0.4em;
+}
+
+.bodyContent input {
+  outline: none;
+  border-radius: 4px;
+  border: solid 2px black;
+  padding: 10px 20px;
+  width: 240px;
+  font-family: inherit;
+}
+
+.bodyContent input:focus {
+  background-color: beige;
+}
+
+.bodyContent label {
+  display: inline-block;
+}
+
+.bodyContent button {
+  width: 160px;
+  height: 40px;
+  border: solid 2px black;
+  border-radius: 4px;
+  background-color: white;
+  font-family : inherit;
+  font-size: 1em;
+}
+
+.bodyContent button:hover {
+  border: solid 2px red;
+  color: red;
+}
+
+.bodyContent a {
+  color: red;
+}
+
+.bodyContent hr {
+  border: solid 1px lightsteelblue;
+}
+
+.bodyContent h2 {
+  color: white;
+  background-color: black;
+  padding-left: 0.2em;
+}
+
+.linkRight {
+  text-align: right;
 }

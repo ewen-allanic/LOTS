@@ -2,7 +2,7 @@
   date_default_timezone_set('Europe/Paris');
 
   // Useful values || Game's information
-	$version = 0.1;
+	$version = "0.018s";
 	$developers = ['Shared'];
 
   include './models/m-connectDB.php';
@@ -18,7 +18,7 @@
 	}
 
 	// Valorisation de la variable d'action à partir de la Query String
-	$action = "decide";
+	$action = "home";
 	if (isset($_GET['action'])) {
 		$action = ($_GET['action']);
 	}

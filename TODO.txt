@@ -16,15 +16,16 @@ LEGEND:
     # [TYPE]              = Terminé / Validé
     & [TYPE]              = Information supplémentaire
 
+
 VERSION 0 (Alpha)
 
 TODO
-    > Créer une page "principale"
+    # Créer une page "principale"
         + CONTENT:  Barre de navigation qui envoie vers "Wiki", "Forum" et "Réseaux sociaux"    -HTML-
 
-        + STYLE:    Située en haut à gauche (Syntaxe en CAPITALES)                              -CSS-
+        + STYLE:    Située en haut à gauche (Syntaxe en CAPITALES) & Div taille de la page                          -CSS-
 
-        / UI:       Initiales du site répétées qui défilent verticalement (+Potentiel logo?)    -JS-
+        < UI:       Initiales du site répétées qui défilent verticalement (+Potentiel logo?)    -JS-
 
     * Créer une page "accueil"
         + CONTENT:  Les liens "Connexion" et "Inscription"                                      -HTML, AJAX-
