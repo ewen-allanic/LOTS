@@ -9,14 +9,14 @@ switch ($ip) {
         $host = "localhost";
         $user = "root";
         $password = "";
-        $dbname = "stockv2";
+        $dbname = "lots";
         $port='3306';
         break;
     case "::1" :
         $host = "localhost";
         $user = "root";
         $password = "";
-        $dbname = "los";
+        $dbname = "lots";
         $port='3306';
         break;
     default :

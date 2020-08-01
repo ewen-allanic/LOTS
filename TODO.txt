@@ -1,9 +1,4 @@
 LEGEND:
-  TYPE:
-    [PRIORITY] CONTENT    = Elements
-    [PRIORITY] TREAT      = Traitement
-    [PRIORITY] STYLE      = Visuel
-    [PRIORITY] UI         = Animatif
   PRIORITY:
     * [TYPE]              = À faire / Obligatoire / Catégorie
     + [TYPE]              = À ajouter / Ajouté
@@ -19,62 +14,61 @@ LEGEND:
 
 VERSION 0 (Alpha)
 
-TODO
     # Créer une page "principale"
-        + CONTENT:  Barre de navigation qui envoie vers "Wiki", "Forum" et "Réseaux sociaux"    -HTML-
+        # CONTENT:  Barre de navigation qui envoie vers "Wiki", "Forum" et "Réseaux sociaux"    -HTML-
 
-        + STYLE:    Située en haut à gauche (Syntaxe en CAPITALES) & Div taille de la page                          -CSS-
+        ~(Plus épuré) STYLE:    Située en haut à gauche (Syntaxe en CAPITALES) & Div taille de la page                          -CSS-
 
         < UI:       Initiales du site répétées qui défilent verticalement (+Potentiel logo?)    -JS-
 
-    * Créer une page "accueil"
-        + CONTENT:  Les liens "Connexion" et "Inscription"                                      -HTML, AJAX-
+    # Créer une page "accueil"
+        ~ CONTENT:  Les liens "Connexion" et "Inscription" (Désormais sur la barre de navigation)   -HTML, AJAX-
 
-        + STYLE:    Centré, syntaxe en CAPITALES, séparé d'un tirait                            -CSS-
+        ~(Désormais dans la topBar) STYLE:    Centré, syntaxe en CAPITALES, séparé d'un tirait                            -CSS-
 
-    * Créer une page "connexion"
-        + CONTENT:  Label "Connexion"(1),
+    # Créer une page "connexion"
+        # CONTENT:  Label "Connexion"(1),
                     Champs "Adresse mail" et "Mot de passe"(2),
                     Bouton "Se connecter"(3),                                                   -HTML, AJAX-
                     Lien "Mot de passe oublié?"(4)
                     Lien "Pas encore inscrit?" (5)
 
-        + TREAT     (3) Redirige vers la page d'accueil ou la page de verification
+        # TREAT     (3) Redirige vers la page d'accueil ou la page de verification
                     (4) Redirige vers la page "Mot de passe oublié"
                     (5) Redirige vers la page "Inscription"                                     -HTML-
 
-        + STYLE:    (1) Fieldset en CAPITALES
+        ~(Plus épuré) STYLE:    (1) Fieldset en CAPITALES
                     (2) Centré ou aligné à gauche, alignement horizontal des champs
                     (3) Aligné au champs supérieur
                     (4) Souligné, taille réduite, aligné en bas à droite                        -CSS-
 
-        / UI:       Animation fieldset & champs                                                 -JS-
+        < UI:       Animation fieldset & champs                                                 -JS-
 
 
     * Créer une page "inscription"
-        + CONTENT:  Label "INSCRIPTION"(1),
+        # CONTENT:  Label "INSCRIPTION"(1),
                     Champs "Adresse mail", "Confirmation", "Mot de passe", "Confirmation"(2),
                     Bouton "S'inscrire"(3)                                                      -HTML, AJAX-
                     Lien "Déjà inscrit?" (4)
 
-        ~ CONTENT:  Entre les champs et le bouton, using conditions and cookies rights' case    -HTML-
+        +~ CONTENT:  Entre les champs et le bouton, using conditions and cookies rights' case    -HTML-
 
-        + TREAT:    (3) Redirige vers la page "Verification"
+        # TREAT:    (3) Redirige vers la page "Verification"
                     (4) Lien "Déjà inscrit?" redirige vers la page d'inscription                -HTML-
 
-        + STYLE:    (1) Fieldset en CAPITALES
+        ~(Plus épuré) STYLE:    (1) Fieldset en CAPITALES
                     (2) Centrés ou alignés à gauche, alignement horizontal des champs
                     (3) Aligné au champ supérieur
                     (4) Aligné en dessous à gauche du fieldset supérieur, taille réduite        -CSS-
 
 
 
-    * Créer une page "verification d'inscription"
-        + CONTENT:  "Inscription réussie !"(1)
+    # Créer une page "verification d'inscription"
+        # CONTENT:  "Inscription réussie !"(1)
                     "Activez votre compte grâce au mail qui vous a été envoyé"(2)
                     Lien "Renvoyer le mail de confirmation"(3)                                  -HTML
 
-        + STYLE:    (1) Centré horizontalement et verticalement, en CAPITALES
+        ~(Plus épuré) STYLE:    (1) Centré horizontalement et verticalement, en CAPITALES
                     (2) Centré en dessous de (1)
                     (3) En dessous de (2), centré, taille réduite                               -CSS-
 
@@ -89,3 +83,10 @@ TODO
 
     * Connecter la BDD
         + CONNECT:  using PDO
+
+
+255.255.255.255
+
+evelynn-anne.huetdeguerville@outlook.live
+2cddefaeaf61c3fa53962e5214
+xxletueurdekikoosxx
